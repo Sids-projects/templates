@@ -1,0 +1,107 @@
+.app-main {
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.app-main .app-desc {
+  background-color: var(--app-desc-bg);
+  color: var(--app-desc-clr);
+  padding: var(--app-desc-pad);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.app-main .app-desc header p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.app-main .app-desc .app-desc-content .desc-icon {
+  font-size: 10rem;
+}
+.app-main .app-desc .app-desc-content h2 {
+  font-size: 4.2rem;
+  line-height: 4.6rem;
+  margin-bottom: 1.2rem;
+}
+.app-main .app-desc .app-desc-content h2 .title-break {
+  display: block;
+}
+.app-main .app-desc .app-desc-content p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+}
+.app-main .app-desc .app-desc-content button {
+  border: 0.2rem solid var(--app-content-bg);
+  background-color: var(--app-content-bg);
+  color: var(--app-content-clr);
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.6rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.4rem;
+  margin-top: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s;
+}
+.app-main .app-desc .app-desc-content button .material-symbols-outlined {
+  font-size: 2.2rem;
+  padding-top: 0.2rem;
+}
+.app-main .app-desc .app-desc-content button:hover {
+  background-color: transparent;
+  color: var(--app-desc-clr);
+}
+.app-main .app-desc .app-desc-content button:active {
+  background-color: var(--app-content-bg);
+  color: var(--app-content-clr);
+}
+.app-main .app-content {
+  background-color: var(--app-content-bg);
+  color: var(--app-content-clr);
+  padding: var(--app-content-pad);
+}
+.app-main .app-content h3 {
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+}
+.app-main .app-content .app-content-tabs {
+  margin-top: 2rem;
+}
+.app-main .app-content .app-content-tabs ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.app-main .app-content .app-content-tabs ul li {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 0 2rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.app-main .app-content .app-content-tabs ul li .tab-content-titles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.app-main .app-content .app-content-tabs ul .active-list {
+  background-color: #242429;
+}/*# sourceMappingURL=app.component.css.map */

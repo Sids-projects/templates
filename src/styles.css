@@ -1,16 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-
 :root {
-  // Backaground Colour
   --app-bg: #000000;
   --app-desc-bg: #dbff74;
   --app-content-bg: #000000;
-  // Font Colour
   --app-clr: #f7f7f7;
   --app-desc-clr: #212025;
   --app-content-clr: #f7f7f7;
   --app-inactive-clr: #727272;
-  // Padding
   --app-desc-pad: 4rem 3.4rem;
   --app-content-pad: 4rem 3.4rem;
 }
@@ -21,7 +17,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -82,4 +77,4 @@ body {
 .mat-mdc-tab-body-content {
   font-family: "Outfit", sans-serif;
   padding: 2rem 0;
-}
+}/*# sourceMappingURL=styles.css.map */
