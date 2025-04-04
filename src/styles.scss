@@ -83,3 +83,32 @@ body {
   font-family: "Outfit", sans-serif;
   padding: 2rem 0;
 }
+
+.load-effect {
+  background-color: var(--app-desc-bg);
+  position: fixed;
+  right: -10rem;
+  bottom: -10rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1000rem;
+  z-index: 1000;
+}
+
+.start-load {
+  animation: loadEffect 4s;
+}
+
+@keyframes loadEffect {
+  0% {
+    scale: 0;
+  }
+
+  50% {
+    scale: 40;
+  }
+
+  100% {
+    scale: 0;
+  }
+}

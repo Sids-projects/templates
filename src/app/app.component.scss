@@ -44,7 +44,7 @@
         font-weight: 500;
       }
 
-      button {
+      a {
         border: 0.2rem solid var(--app-content-bg);
         background-color: var(--app-content-bg);
         color: var(--app-content-clr);
@@ -58,7 +58,9 @@
         justify-content: center;
         gap: 1rem;
         text-transform: uppercase;
+        text-decoration: none;
         font-weight: 600;
+        max-width: fit-content;
         letter-spacing: 0.1rem;
         transition: all 0.2s;
 
@@ -125,4 +127,35 @@
       }
     }
   }
+}
+
+// .router-outlet {}
+
+dialog {
+  border: none;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin: auto;
+
+  .close-btn {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    border: none;
+    background-color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+::backdrop {
+  background: rgba(0, 0, 0, 0.5);
 }

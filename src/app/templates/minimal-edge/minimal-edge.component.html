@@ -1,1 +1,215 @@
-<p>minimal-edge works!</p>
+<main id="app-main">
+  <header id="app-header">
+    <div class="set-01">
+      <!-- <img class="logo" src="./assets/logo.svg" /> -->
+      <div
+        class="logoMob"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop"
+      >
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
+      <nav class="set-02">
+        <a> Css </a>
+        <a> Scss </a>
+        <a> Javascript </a>
+        <a> Angular </a>
+        <a> React </a>
+        <a> Github </a>
+        <a class="active-link"> Other </a>
+      </nav>
+    </div>
+    <div class="set-03">
+      <form>
+        <select>
+          <option value="en">En</option>
+          <option value="tn">Tn</option>
+        </select>
+      </form>
+      <i
+        class="fa-solid fa-magnifying-glass search-icon"
+        data-bs-toggle="modal"
+        data-bs-target="#searchMain"
+      ></i>
+    </div>
+  </header>
+
+  <section id="app-body">
+    <nav class="set-01">
+      <div class="component-box">
+        <small>Basics</small>
+        <div class="components-list mb-4">
+          <a
+            routerLink="JsIntroRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-solid fa-note-sticky"></i> Intro
+          </a>
+          <a
+            routerLink="JsCommentsRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-solid fa-comments"></i> Comments
+          </a>
+          <a
+            routerLink="JsVariablesRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-database fa-solid"></i> Variables
+          </a>
+          <a
+            routerLink="JsOperatorsRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-equals fa-solid"></i> Operators
+          </a>
+          <a
+            routerLink="JsTliteralsRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-link fa-solid"></i> Template Literals
+          </a>
+          <a
+            routerLink="JsConversionRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-shuffle fa-solid"></i> Conv & Coerc
+          </a>
+          <a
+            routerLink="JsTruthyfalsyRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-code-fork fa-solid"></i> Truthy & Falsy
+          </a>
+          <a
+            routerLink="JsBooleanRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-network-wired fa-solid"></i> Boolean
+          </a>
+          <a
+            routerLink="JsStatExpRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-file-signature fa-solid"></i> Stmt & Expr
+          </a>
+          <a
+            routerLink="JsArrayRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-object-group fa-regular"></i> Array
+          </a>
+          <a
+            routerLink="JsPromptRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-regular fa-window-maximize"></i> Prompt
+          </a>
+          <a
+            routerLink="JsIfelseRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-solid fa-spell-check"></i> If else
+          </a>
+          <a
+            routerLink="JsSwitchRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-list-check fa-solid"></i> Switch case
+          </a>
+          <a
+            routerLink="JsFunctionsRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-box fa-solid"></i> Function
+          </a>
+          <a
+            routerLink="JsObjectRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-box fa-solid"></i> Object
+          </a>
+          <a
+            routerLink="JsLoopRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-box fa-solid"></i> Loop
+          </a>
+          <a
+            routerLink="JsProject01Route"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-solid fa-bullseye"></i> Project
+          </a>
+        </div>
+
+        <small>Advance</small>
+        <div class="components-list">
+          <a
+            routerLink="JsAdvIntroRoute"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-solid fa-note-sticky"></i> Intro
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="set-02">
+      <div>
+        <h2 class="h2-title"># Comment</h2>
+        <div>
+          <ul class="ul-list">
+            <li>
+              JavaScript comments namba code la oru chinna message mathri.
+            </li>
+            <li>
+              Namba purinjikuradhukaga aprm namake theva illadha part la run
+              aagama veachikum
+            </li>
+          </ul>
+        </div>
+        <ng-template>
+          <div>
+            <ul class="ul-list">
+              <li>
+                JavaScript comments are like mini-messages you can write in your
+                code.
+              </li>
+              <li>
+                They help you explain what's going on or turn off parts you're
+                not using yet.
+              </li>
+            </ul>
+          </div>
+        </ng-template>
+        <div class="diagram-div">
+          <!-- <img
+            src="./assets/js/comment-en.svg"
+            alt="comment-diagram"
+            class="comment-img common-diagram"
+          /> -->
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
