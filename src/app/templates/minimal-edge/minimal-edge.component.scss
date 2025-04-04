@@ -17,35 +17,37 @@
 }
 
 // Mat AutoComplete
-.mat-mdc-option {
-  min-height: 3.6rem !important;
-  font-size: 1.4rem !important;
-  padding-left: 0.8rem !important;
-  padding-right: 0.8rem !important;
-}
-
-.mat-mdc-autocomplete-panel {
-  padding: 0.4rem 0 !important;
-  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.062) !important;
-  border-top: 0.1rem solid #474747;
-  border-right: 0.1rem solid #474747;
-  border-left: 0.1rem solid #474747;
-  border-bottom: 0.1rem solid #474747;
-  background-color: #202020 !important;
-  color: white !important;
-}
-
-.mat-mdc-option.mdc-list-item {
-  color: white !important;
-
-  &:hover {
-    background-color: #474747 !important;
+:ng-deep {
+  .mat-mdc-option {
+    min-height: 3.6rem !important;
+    font-size: 1.4rem !important;
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
   }
-}
 
-.cdk-global-overlay-wrapper,
-.cdk-overlay-container {
-  z-index: 9999 !important;
+  .mat-mdc-autocomplete-panel {
+    padding: 0.4rem 0 !important;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.062) !important;
+    border-top: 0.1rem solid #474747;
+    border-right: 0.1rem solid #474747;
+    border-left: 0.1rem solid #474747;
+    border-bottom: 0.1rem solid #474747;
+    background-color: #202020 !important;
+    color: white !important;
+  }
+
+  .mat-mdc-option.mdc-list-item {
+    color: white !important;
+
+    &:hover {
+      background-color: #474747 !important;
+    }
+  }
+
+  .cdk-global-overlay-wrapper,
+  .cdk-overlay-container {
+    z-index: 9999 !important;
+  }
 }
 
 .modal-content {
@@ -107,7 +109,7 @@ hr {
 }
 
 // App Style
-#app-header {
+#me-header {
   width: 100%;
   background-color: rgb(25, 27, 31);
   border-bottom: 0.1rem solid rgb(60, 61, 65);
@@ -179,7 +181,7 @@ hr {
   }
 }
 
-#app-body {
+#me-body {
   display: grid;
   grid-template-columns: 22rem calc(100vw - 22rem);
 
@@ -188,7 +190,6 @@ hr {
     background-color: rgb(25, 27, 31);
     overflow-y: scroll;
     padding: 1rem;
-    border-radius: 0.6rem;
     height: calc(100vh - 6.8rem);
 
     small {
@@ -402,7 +403,7 @@ hr {
   }
 }
 
-#app-search {
+#me-search {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -494,7 +495,7 @@ hr {
 }
 
 @media only screen and (max-width: 780px) {
-  #app-header {
+  #me-header {
     .set-01 {
       .set-02 {
         width: 13rem !important;
@@ -516,7 +517,7 @@ hr {
     }
   }
 
-  #app-body {
+  #me-body {
     grid-template-columns: 100vw;
     padding-left: 0 !important;
     padding-top: 0 !important;

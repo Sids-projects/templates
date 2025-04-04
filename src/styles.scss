@@ -1,6 +1,19 @@
+// App
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+// Minimal Edge
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+// App
+@font-face {
+  font-family: "Cubano";
+  src: url("./assets/Cubano.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
+  --app-font-heads: "Cubano", sans-serif !important;
+  --app-font-content: "Outfit", sans-serif !important;
   // Backaground Colour
   --app-bg: #000000;
   --app-desc-bg: #dbff74;
@@ -10,16 +23,6 @@
   --app-desc-clr: #212025;
   --app-content-clr: #f7f7f7;
   --app-inactive-clr: #727272;
-  // Padding
-  --app-desc-pad: 4rem 3.4rem;
-  --app-content-pad: 4rem 3.4rem;
-}
-
-@font-face {
-  font-family: "Cubano";
-  src: url("./assets/Cubano.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
 * {
@@ -34,7 +37,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Outfit", sans-serif;
 }
 
 .mat-typography h1,
@@ -45,43 +47,15 @@ body {
 .mat-typography h6 {
   margin: 0;
   padding: 0;
-  font-family: "Cubano", sans-serif !important;
 }
 
 .mat-typography p {
   margin: 0;
   padding: 0;
-  font-family: "Outfit", sans-serif;
 }
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
-}
-
-.mat-mdc-tab-labels {
-  border-bottom: 0.1rem solid #2a2a2a;
-}
-
-.mdc-tab__text-label {
-  font-family: "Cubano", sans-serif !important;
-  font-size: 1.6rem;
-}
-
-.mat-mdc-tab .mdc-tab__text-label {
-  color: #ffffff !important;
-}
-
-.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
-  color: #dbff74 !important;
-}
-
-.mat-mdc-tab .mdc-tab-indicator__content--underline {
-  border-color: #dbff74 !important;
-}
-
-.mat-mdc-tab-body-content {
-  font-family: "Outfit", sans-serif;
-  padding: 2rem 0;
 }
 
 .load-effect {

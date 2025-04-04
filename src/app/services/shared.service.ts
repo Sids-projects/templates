@@ -9,7 +9,7 @@ export class SharedService {
   templateData: TemplateData[] = [
     {
       icon: 'category',
-      title: 'Angular Templates & <span class="title-break">Components</span>',
+      title: 'Angular Templates',
       desc: 'Build seamless and visually appealing user interfaces with our Angular UI library. Designed for flexibility and scalability, our pre-built templates and components ensure a smooth development experience with optimized SCSS and CSS.',
       btn: 'View Template',
       routeTo: '',

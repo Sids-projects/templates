@@ -7,10 +7,12 @@
       </p>
     </header>
     <div class="app-desc-content">
-      <span class="material-symbols-outlined desc-icon">
-        {{ storeDesc.icon }}
-      </span>
-      <h2 [innerHTML]="sanitizeHtml(storeDesc.title)"></h2>
+      <div class="app-desc-box">
+        <span class="material-symbols-outlined desc-icon">
+          {{ storeDesc.icon }}
+        </span>
+        <h2 [innerHTML]="sanitizeHtml(storeDesc.title)"></h2>
+      </div>
       <p>{{ storeDesc.desc }}</p>
       <a
         *ngIf="storeDesc.routeTo != ''"
@@ -23,7 +25,6 @@
   </section>
 
   <section class="app-content">
-    <h3>Choose a Title</h3>
     <mat-tab-group class="app-content-tabs">
       <mat-tab>
         <ng-template mat-tab-label>
@@ -64,7 +65,7 @@
   </section>
 </main>
 
-<section class="router-outlet">
+<section class="router-outlet" *ngIf="showMain != '/' || ''">
   <router-outlet></router-outlet>
 </section>
 
